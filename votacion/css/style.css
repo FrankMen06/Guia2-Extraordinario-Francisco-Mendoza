@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.container{
+    padding: 25px;
+    margin: 5px;
+    margin-left: 250px;
+}
+
+.container :hover{
+    
+    width: 220px;
+    height: 220px;
+}
+
+.botones{
+    margin-left: 550px;
+    
+}
