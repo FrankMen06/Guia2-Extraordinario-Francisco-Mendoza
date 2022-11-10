@@ -28,9 +28,9 @@ function votar(){
     totalVot = votChes + votfl + votElao + votLav;
 
     porcenChes = (votChes*100)/totalVot; 
-    porcenFln = (votfl*100)/totalVot; 
+    porcenFln  = (votfl*100)/totalVot; 
     porcenElao = (votElao*100)/totalVot; 
-    porcenLav = (votLav*100)/totalVot; 
+    porcenLav  = (votLav*100)/totalVot; 
 
      
     let respuesta = window.prompt("Ingrese la contraseña para iniciar (contraseña: votacion2023)");
@@ -46,10 +46,10 @@ function votar(){
 
 
         resultados.innerHTML ="<center>El total de resultados fueron:"+totalVot+"</center> "; 
-        portChesse.innerHTML ="<center>El porcentaje de votos para chesse fueron:"+porcenChes+"%</center> ";   
-        portFln.innerHTML ="<center>El porcentaje de votos para chesse fueron:"+porcenFln+"%</center> ";  
-        portHelado.innerHTML ="<center>El porcentaje de votos para chesse fueron:"+porcenElao+"%</center> ";  
-        portLava.innerHTML ="<center>El porcentaje de votos para chesse fueron:"+porcenLav+"%</center> ";  
+        portChesse.innerHTML ="<center>El porcentaje de votos para chesse fueron:"+porcenChes.toFixed(2)+"%</center> ";   
+        portFln.innerHTML ="<center>El porcentaje de votos para Flan fueron:"+porcenFln.toFixed(2)+"%</center> ";  
+        portHelado.innerHTML ="<center>El porcentaje de votos para Helado fueron:"+porcenElao.toFixed(2)+"%</center> ";  
+        portLava.innerHTML ="<center>El porcentaje de votos para Lava Cake fueron:"+porcenLav.toFixed(2)+"%</center> ";  
 
 
 
@@ -58,5 +58,6 @@ function votar(){
         return;
     }
 }
+
 
 
